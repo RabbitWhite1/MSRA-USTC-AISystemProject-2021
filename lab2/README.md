@@ -12,6 +12,14 @@
 ||CUDA版本|11.1|
 ||||
 
+### 文件说明
+
+- mnist_custom_linear.py: 实现了基于 Python 的线性层操作
+- mnist_custom_linear_cpp.py: 实现了基于 C++ 的线性层操作
+- mnist_custom_conv.py: 实现了基于 Python 的卷积操作, 从 5 层 for 循环优化到了使用了 2 层 for 循环.
+- mnist_custom_conv_cpp.py: 实现了基于 C++ 的卷积操作, 从 5 层 for 循环优化到了使用了 2 层 for 循环.
+- mnist_custom_conv_im2col.py: 实现了基于 Python 的卷积操作, 采用 `im2col` 优化访存, 并消去所有明面上的 for 循环, 以便优化.
+
 ### 实验结果
 
 #### 性能评测
